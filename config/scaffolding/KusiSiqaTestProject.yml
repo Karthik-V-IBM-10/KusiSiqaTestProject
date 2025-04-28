@@ -7,3 +7,87 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: WmJDBCAdapter
+  version: 10.3.0.0.34
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Databasenew
+  packages:
+  - name: KusiSiqaTestProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: KusiSiqaTestProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DbNewInsert
+  packages:
+  - name: KusiSiqaTestProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kusisiqatest.integrations:SIQAAdapterFlow
+  packages:
+  - name: KusiSiqaTestProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.user
+  : siqatest
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.driverType
+  : test
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.keyStore
+  : ""
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionEnabled
+  : "false"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.dbType
+  : MySQL
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.KusiSiqaTestProject.project.kusisiqatest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Databasenew.connectionSettings.trustStore
+  : ""
